@@ -1,17 +1,27 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>DATA ITER</h1>
+    <data-iter/>
+    <hr/>
+    <br/>
+    <simple-table/>
+    <br/>
+    <data-table/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DataIter from './components/DataIter.vue';
+import DataTable from './components/DataTable.vue';
+import SimpleTable from './components/SimpleTable.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SimpleTable,
+    DataTable,
+    DataIter
   }
 }
 </script>
